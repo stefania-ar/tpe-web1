@@ -1,0 +1,526 @@
+body {
+  background-image: url("../img/fondo.gif");
+  margin: 0;
+}
+
+
+.content {
+  padding-top: 9vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: 'Poppins', sans-serif;
+}
+/*Que esto quede así por especificidad u orden */
+img {
+  max-width: 80%;
+  max-height: 80%;
+  margin-left: 20px;
+}
+
+.imageHolderLateral img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+/* NO ALTERAR ESTE ORDEN*/
+
+.resenia {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.6);
+}
+p, h2 {
+  text-align: justify;
+
+}
+p {
+  padding: 0 4px 0 4px;
+}
+h2 {
+  padding: 3px;
+  font-size: large;
+}
+.Sinopsis {
+  padding: 15px;
+}
+
+td {
+  border: 3px solid rgb(255, 255, 255);
+  margin: 100px;
+  padding: 10px;
+  border-radius: 17px;
+}
+
+tr {
+  background-color: rgb(241, 197, 255);
+  border: 3px solid rgb(255, 255, 255);
+  font-size: 25px;
+  margin: 100px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 17px;
+}
+table {
+  margin-bottom: 350px;
+}
+thead tr td {
+  border: 3px solid rgb(255, 255, 255);
+  margin: 70px;
+  padding: 10px;
+  background-color: rgb(241, 197, 255);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+}
+
+.inputTablas{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 1.7vh 3vh;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.contentTabla{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botonTablas {
+  float: right;
+  border: 0;
+  background: rgba(164, 136, 255, 0.7);
+  color: #fff;
+  margin-top: 3px;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  align-self: center;
+}
+
+footer{
+  background-color: rgb(132, 95, 255);
+  margin:0;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.TextoDerechos{
+  margin: 0;
+}
+.LogosRedesSociales {
+  display: none;
+}
+.inputs{
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contentCategorias{
+  padding-top: 10vh;
+}
+
+.botonCategorias{
+  border: 0;
+  background: rgba(164, 136, 255, 0.7);
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.botonCategorias:hover{
+  background: rgba(164, 136, 255, 0.7);
+}
+
+.inputCategorias{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 3vh 5vh;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+
+.inputs {
+  width: auto;
+  max-width: 60vh;
+  padding-top: 9vh;
+  margin: auto;
+  overflow: hidden;
+}
+
+.inputs p{
+  text-align: center;
+}
+
+.resaltado{
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+}
+
+footer .Lista{
+  list-style: none;
+}
+
+footer p{
+  text-align: center;
+}
+
+/*>>>>>>>>>>>MOBILE FIRST<<<<<<<<<<*/
+
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  text-align: center;
+  background-image: url("../img/fondo.gif");
+
+}
+
+
+/* Comienzo del diseño del content */
+.content {
+  padding-top: 6vh;
+  width: 90%;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+
+.contentTabla{
+  padding-top: 6vh;
+  width: 90%;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Comienzo del diseño de las reseñas */
+.content .reseniaHolder {
+  width: 60%;
+}
+.OcultarReseñas {
+  display: none;
+}
+.imageHolder {
+  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageHolder img {
+  max-width: 100%;
+}
+
+.content .reseniaHolder .resenia {
+  border-style: solid;
+  border-width: thin;
+  padding: 4px;
+  margin: 3vh auto;
+  border-radius: 18px;
+}
+
+.content .reseniaHolder .resenia p {
+  padding-top: 2vh;
+}
+
+.resenia {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.content .reseniaHolder .resenia p .destacado {
+  font-weight: bold;
+}
+
+.content .reseniaHolder p {
+  text-align: justify;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+}
+
+.content .reseniaHolder h1 {
+  font-family: 'Poppins', sans-serif;
+  padding: 15px;
+}
+
+.content .reseniaHolder h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.content .reseniaHolder h3 {
+  font-family: 'Poppins', sans-serif;
+  padding: 5px;
+  text-align: justify;
+  padding-left: 15px;
+}
+
+.Sinopsis {
+  display: flex;
+}
+
+
+.SinopsisTexto {
+  padding: 30px 30px 0px 50px;
+}
+
+/*Comienzo del diseño de la reseña de Coco */
+#coco .Sinopsis .imageHolder {
+  width: 70%;
+}
+
+/* FIN DISEÑO RESEÑA DE COCO */
+/*COMIENZO DISEÑO RESEÑA DE ROBANDO VIDAS */
+#RobandoVidas .Sinopsis .imageHolder {
+  width: 180%;
+}
+
+/* FIN DISEÑO DE ROBANDO VIDAS*/
+#viajeChihiro .Sinopsis .imageHolder {
+  width: 180%;
+}
+
+/* Comienzo diseño Yo robot */
+#yoRobot .Sinopsis .imageHolder {
+  width: 180%;
+}
+
+/* Fin diseño Yo robot */
+/* Comienzo diseño Her */
+#her .Sinopsis .imageHolder {
+  width: 180%;
+}
+
+/* Fin diseño Her */
+/* Comienzo diseño Interstellar */
+#Interstellar .Sinopsis .imageHolder {
+  width: 170%;
+}
+
+/* Fin diseño Interstellar */
+/* Comienzo diseño de Toy Story*/
+#toyStory .Sinopsis .imageHolder {
+  width: 245%;
+}
+
+/* Fin diseño de Toy Story */
+/* Fin del diseño de las reseñas */
+/* Comienzo del diseño del lateral */
+.content .lateralHolder {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 0;
+}
+
+.content .lateralHolder .lateralBox {
+  margin-top: 3vh;
+}
+
+.content .lateralHolder .publicidadHolder {
+  max-width: 80%;
+}
+
+.content .lateralHolder .reseniasRecientesHolder {
+  min-width: 80%;
+  max-width: 80%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content .lateralHolder .reseniasRecientesHolder h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+.content .lateralHolder .reseniasRecientesHolder ul {
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 10px;
+}
+
+.content .lateralHolder .reseniasRecientesHolder ul li {
+  display: flex;
+  background: rgba(255, 255, 255, .1);
+  padding: 10px 20px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.11);
+  margin: 5px 0;
+  transition: .5s;
+}
+
+.content .lateralHolder .reseniasRecientesHolder ul li:hover {
+  transform: scale(1.045);
+}
+
+/* nth-child(n) n se refiere al hijo directo de x (en este caso la lista) */
+.content .lateralHolder .reseniasRecientesHolder ul li span:nth-child(1) {
+  width: 40%;
+}
+
+.content .lateralHolder .reseniasRecientesHolder ul li span:nth-child(2) {
+  width: 40%;
+  text-align: center;
+}
+
+.content .lateralHolder .reseniasRecientesHolder ul li span:nth-child(3) {
+  width: 20%;
+  text-align: right;
+}
+
+.content .lateralHolder .reseniasRecientesHolder a {
+  text-decoration: none;
+}
+
+.imageHolderLateral {
+  align-items: center;
+  justify-content: center;
+}
+
+.imageHolderLateral img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* Fin del diseño del lateral */
+/* Fin del diseño del contenido */
+/* Css de la tabla de categorías en la página 1 */
+table {
+  margin-bottom: 350px;
+
+}
+thead tr td {
+  background-color: rgb(241, 197, 255);
+  min-width: 200px;
+}
+
+thead {
+  border: 3px solid rgb(255, 255, 255);
+  font-size: 25px;
+  margin: 70px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 17px;
+}
+
+td {
+  border: 3px solid rgb(255, 255, 255);
+  font-size: 25px;
+  margin: 100px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 17px;
+}
+
+tr {
+  background-color: rgb(241, 197, 255);
+  border: 3px solid rgb(255, 255, 255);
+  font-size: 25px;
+  margin: 100px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 17px;
+}
+.inputs{
+  color: white;
+  font-size: larger;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*COMIENZO DEL DISEÑO DEL FOOTER */
+footer {
+  background-color: rgb(132, 95, 255);
+  height: 190px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  position: relative;
+  right: 0px;
+  left: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .LogoRed {
+  width: 50px;
+  height: 50px;
+}
+
+footer .ContactoFooter .ListaContacto .Lista{
+  list-style: none;
+}
+
+.ContactoFooter p {
+  text-align: center;
+  margin-top: 3px;
+}
+
+.RedesFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.LogosRedesSociales {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-around;
+}
+
+.DerechosFooter {
+  padding-top: 130px;
+}
+
+.Lista {
+  padding: 10px;
+}
+
+/* Fin diseño footer */
+.resaltado{
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+}
+}

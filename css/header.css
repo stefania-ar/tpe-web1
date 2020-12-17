@@ -1,0 +1,149 @@
+/* Comienzo del diseño del Nav-Bar */
+header nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 6vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(164, 136, 255);
+  z-index: 20;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo a {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+header .nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+header .nav-links li {
+  list-style: none;
+}
+
+header .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all ease 0.3s;
+}
+
+header ul li a:hover {
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.47);
+  border-radius: 16px;
+  padding: 3px;
+}
+
+header .burger{
+  display: none;
+}
+
+header .burger div{
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+
+/*>>>>>MOBILE FIRST - BOTON<<<<<*/
+
+@media screen and (max-width:1024px) {
+  body{
+    overflow-x: hidden;
+    text-align: center;
+  }
+  header .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(164, 136, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 120;
+  }
+  header .nav-links li{
+    opacity: 0;
+  }
+  header .burger{
+    display: block;
+  }
+  #gotop{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .lateralHolder{
+    display: none;
+  }
+
+}
+
+#gotop{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: rgb(132, 95, 255);
+  bottom: 50px;
+  right: 40px;
+  z-index: 160;
+
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+
+  pointer-events: all;
+}
+
+header .nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+header .toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+header .toggle .line2{
+  opacity: 0;
+}
+
+header .toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+/* Fin del diseño del Nav-Bar */

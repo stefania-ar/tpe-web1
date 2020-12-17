@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Implementacion de fuente -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <title>CATEGORIAS</title>
+  <!--<script src="js/TablaDinamica.js"></script>-->
+  <script src="js/plastikTabla.js"></script>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/mainstyle.css">
+  <!-- Implementacion de icono -->
+  <script src="https://kit.fontawesome.com/a8a1742461.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header id="top">
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <h4>Reseñas por ahora</h4>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html#home">HOME</a>
+        </li>
+        <li>
+          <a href="categorias.html">Categorias</a>
+        </li>
+        <li>
+          <a href="contacto.html#nosotros">¿Quienes somos?</a>
+        </li>
+        <li>
+          <a href="contacto.html#contacto">Contacto</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+  <section class="inputs">
+      <form action="">
+        <section>
+            <p>Ingrese año</p>
+            <input class="inputTablas" type="text" id="inputAñoID" placeholder="Ingrese el año de la pelicula">
+        </section>
+        <section>
+            <p>Ingrese película</p>
+            <input class="inputTablas" type="text" id="inputPelisID" placeholder="Ingrese el nombre de la pelicula">
+        </section>
+        <section>
+            <p>Ingrese país/países de origen</p>
+            <input class="inputTablas" type="text" id="inputPaisID" placeholder="Ingrese la nacionalidad de la pelicula">
+        </section>
+        <input class="inputTablas" type="text" id="idinput" placeholder="Filtre las peliculas por nombre">
+
+      </form>
+      <button class="botonTablas" id="buttonfiltrar">Filtrar por nombre</button>
+      <button class="botonTablas" id="AgregarFilaID">Agregar Fila</button>
+      <button class="botonTablas" id="ResetTablaID">Reset Tabla</button>
+      <button class="botonTablas" id="Agregar3pelisID">Agregar 3 pelis preestablecidas</button>
+    </section>
+
+  <div class="contentTabla">
+    <!--Tabla de categorías de las películas en página 1 -->
+    <table class="tabla">
+      <thead>
+        <tr>
+          <td class="">
+            AÑO
+          </td>
+          <td class="">
+            PELICULAS
+          </td>
+          <td class="">
+            PAIS
+          </td>
+          <td>
+            BORRAR/EDITAR
+          </td>
+        </tr>
+      </thead>
+      <tbody id="tableID">
+
+      </tbody>
+
+    </table>
+  </div>
+  <!--COMIENZO DEL HTML DEL FOOTER-->
+  <a id="gotop" href="#top"><i class="fas fa-arrow-up"></i></a>
+  <script src="js/transicionNav.js"></script>
+  <footer>
+    <div class="RedesFooter">
+      <p>
+        SEGUINOS EN NUESTRAS REDES SOCIALES
+      </p>
+      <div class="LogosRedesSociales">
+        <img class="LogoRed" src="img/flogo.svg" alt="">
+        <img class="LogoRed" src="img/instagram.svg" alt="">
+        <img class="LogoRed" src="img/youtube.svg" alt="">
+      </div>
+    </div>
+    <div class="ContactoFooter">
+      <p>
+        CONTACTANOS
+      </p>
+      <ul class="ListaContacto">
+        <div class="Lista">
+          <li>
+            Nuestro mail: reseñasgeniales@gmail.com
+          </li>
+        </div>
+        <div class="Lista">
+          <li>
+            Nuestras redes aquí al costado
+          </li>
+        </div>
+        <div class="Lista">
+          <li>
+            "CONTACTO" en la parte superior
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="DerechosFooter">
+      <p class="TextoDerechos">
+        All rights reserved © 2020 | Todos los derechos reservados © 2020
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Reseñas por ahora - Contacto</title>
+  <!-- Implementacion de fuente -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/mainstyle.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <!-- Implementacion de icono -->
+  <script src="https://kit.fontawesome.com/a8a1742461.js" crossorigin="anonymous"></script>
+  <script defer src="js/captcha.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header id="top">
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <h4>Reseñas por ahora</h4>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html#home">HOME</a>
+        </li>
+        <li>
+          <a href="categorias.html">Categorias</a>
+        </li>
+        <li>
+          <a href="contacto.html#nosotros">¿Quienes somos?</a>
+        </li>
+        <li>
+          <a href="contacto.html#contacto">Contacto</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="content">
+    <div id="nosotros">
+      <h1>Nosotros</h1>
+      <p>¡Hola! Somos un grupo de estudiantes de la carrera de TUDAI, poniendo en práctica todos los conocimientos vistos en la materia de WEB 1 sobre como armar un sitio web. Esta es nuestra primera página juntos, y decidimos hacerla sobre un tema
+        que siempre es bueno hablar, debatir y compartir, las producciones cinematográficas.
+        Ambos hicimos este sitio, no sólo con la idea de presentarla dentro del marco del trabajo práctico especial, sino también de poder crear una página que muestre, los conocimientos adquiridos, la práctica y el tiempo que se le dedica a un
+        proyecto.
+        Nuestras reseñas y críticas de películas son más bien sencillas, sin ser ese el objetivo fundamental, pero cumpliendo con la consigna de crear una web de reseñas. Contamos con un home, desde donde los y las usuarias entran a la página, siendo
+        la principal y desde donde pueden dirigirse a otras pestañas con otros contenidos también interesantes.
+        También contamos con una tabla de películas extranjeras y nacionales ordenadas según distintas categorías o géneros, donde se pueden observar algunos ejemplos destacados. La tabla se encuentra en una de las pestañas que decidimos realizar,
+        bajo el nombre “categorías” por si están interesados en conocer más.
+        También decidimos incluir un formulario de contacto, nos encanta saber de nuestros usuarios y usuarias, así como de sus comentarios, de sus ideas para reseñas, y también sus críticas constructivas. Cualquier mensaje que alguien quisiera
+        dejarnos, solamente tiene que dirigirse a la pestaña “contacto”, llenar el formulario y validar el captcha para probar que no son bots quienes nos visitan.
+        Por último, nuestra pestaña “quienes somos” dice un poco acerca de nosotros y de nuestro proyecto, es la página en la que se encuentran actualmente. Finalmente, el footer es nuestro saludo final donde nos pueden seguir en distintas redes
+        sociales, y donde los guía hacia el contacto para mas información. ¡Que disfruten su visita web!
+      </p>
+    </div>
+
+    <div id="contacto">
+      <h1>Contactanos</h1>
+      <div class="border"></div>
+
+      <div class="captcha">
+        <form id="formularioContacto" class="contact-form">
+        <input type="text" class="contact-form-text" placeholder="Tu nombre">
+        <input type="email" class="contact-form-text" placeholder="Tu E-Mail">
+        <textarea class="contact-form-text" placeholder="Tu mensaje"></textarea>
+        <p>Ingrese correctamente el siguiente captcha para confirmar que no eres un bot</p>
+        <p id="NumRandom">.</p>
+        <input class="contact-form-text" id="inputCaptcha" type="text" placeholder="Ingrese el captcha">
+        </form>
+
+        <button id="enviar">Enviar</button>
+        <p id="validez">
+          Esperando validación
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/transicionNav.js"></script>
+  <!--COMIENZO DEL HTML DEL FOOTER-->
+  <footer>
+    <div class="RedesFooter">
+      <p>
+        SEGUINOS EN NUESTRAS REDES SOCIALES
+      </p>
+      <div class="LogosRedesSociales">
+        <img class="LogoRed" src="img/flogo.svg" alt="">
+        <img class="LogoRed" src="img/instagram.svg" alt="">
+        <img class="LogoRed" src="img/youtube.svg" alt="">
+      </div>
+    </div>
+    <div class="ContactoFooter">
+      <p>
+        CONTACTANOS
+      </p>
+      <ul class="ListaContacto">
+        <div class="Lista">
+          <li>
+            Nuestro mail: reseñasgeniales@gmail.com
+          </li>
+        </div>
+        <div class="Lista">
+          <li>
+            Nuestras redes aquí al costado
+          </li>
+        </div>
+        <div class="Lista">
+          <li>
+            "CONTACTO" en la parte superior
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="DerechosFooter">
+      <p class="TextoDerechos">
+        All rights reserved © 2020 | Todos los derechos reservados © 2020
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
